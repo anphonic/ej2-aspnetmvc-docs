@@ -1,10 +1,10 @@
 # Markers
 
-Markers are notes that are used to leave a message on the Maps. It indicates or marks a specific location with desired symbols on the Maps. It can be enabled by setting the `Visible` property of the `MapsMarker` class to "**true**".
+Markers are notes that are used to leave a message on the Maps. It indicates or marks a specific location with desired symbols on the Maps. It can be enabled by setting the `Visible` property of the `MapsMarker` to **true**.
 
 ## Adding marker
 
-To add the markers, the `DataSource` property of the `MapsMarker` class has a list of objects that contains the data for markers. Using this property, any number of markers can be added to the layers of the Maps. By default, it displays the markers based on the specified latitude and longitude in the given data source. Each data source object contains the following list of properties.
+To add the markers, the `DataSource` property of the `MapsMarker` has a list of objects that contains the data for markers. Using this property, any number of markers can be added to the layers of the Maps. By default, it displays the markers based on the specified latitude and longitude in the given data source. Each data source object contains the following list of properties.
 
 * latitude - The latitude point which determines the X location of the marker.
 * longitude - The longitude point which determines the Y location of the marker.
@@ -17,7 +17,7 @@ To add the markers, the `DataSource` property of the `MapsMarker` class has a li
 
 ## Adding marker template
 
-The Marker can be added as a template in the Maps component. The `Template` property of the `MapsMarker` class is used to set the HTML element or id of an element as a template.
+The Marker can be added as a template in the Maps component. The `Template` property of the `MapsMarker` is used to set the HTML element or id of an element as a template.
 
 {% aspTab template="maps/markers/marker-label", sourceFiles="marker-label.cs" %}
 
@@ -47,7 +47,7 @@ The following properties are available in `MapsMarker` class to customize the Ma
 
 ## Marker shapes
 
-The Maps component supports the following marker shapes. To set the shape of the marker, the `Shape` property in `MapsMarker` class is used.
+The Maps component supports the following marker shapes. To set the shape of the marker, the `Shape` property in `MapsMarker` is used.
 
 * Balloon
 * Circle
@@ -62,7 +62,7 @@ The Maps component supports the following marker shapes. To set the shape of the
 
 ### Rendering marker shape as image
 
-To render a marker as an image in Maps, set the `Shape` property of `MapsMarker` as "**Image**" and specify the path of the image to `ImageUrl` property. There is another way to render a marker as an image using the `ImageUrlValuePath` property of the `MapsMarker` class. Bind the field name that contains the path of the image in the data source to the `ImageUrlValuePath` property.
+To render a marker as an image in Maps, set the `Shape` property of `MapsMarker` as **Image** and specify the path of the image to `ImageUrl` property. There is another way to render a marker as an image using the `ImageUrlValuePath` property of the `MapsMarker`. Bind the field name that contains the path of the image in the data source to the `ImageUrlValuePath` property.
 
 {% aspTab template="maps/markers/marker-image", sourceFiles="marker-image.cs" %}
 
@@ -72,7 +72,7 @@ To render a marker as an image in Maps, set the `Shape` property of `MapsMarker`
 
 ## Multiple marker groups
 
-Multiple groups of markers can be added in the Maps by adding multiple `MapsMarker` classes in the `MapsMarkers` class and customization for the markers can be done with the `MapsMarker` class.
+Multiple groups of markers can be added in the Maps by adding multiple `MapsMarker` in the `MapsMarkers` and customization for the markers can be done with the `MapsMarker`.
 
 {% aspTab template="maps/markers/marker-group", sourceFiles="marker-group.cs" %}
 
@@ -104,7 +104,7 @@ The latitude and longitude values are used to determine the location of each mar
 
 ## Marker zooming
 
-The Maps can be initially scaled to the center value based on the marker distance. This can be achieved by setting the `ShouldZoomInitially` property in `MapsZoomSettings` as "**true**".
+The Maps can be initially scaled to the center value based on the marker distance. This can be achieved by setting the `ShouldZoomInitially` property in `MapsZoomSettings` as **true**.
 
 {% aspTab template="maps/markers/marker-zoom", sourceFiles="marker-zoom.cs" %}
 
@@ -116,7 +116,7 @@ The Maps can be initially scaled to the center value based on the marker distanc
 
 Maps provide support to cluster the markers when they overlap each other. The number on a cluster indicates how many overlapped markers it contains. If zooming is performed on any of the cluster locations in Maps, the number on the cluster will decrease, and the individual markers will be seen on the map. When zooming out, the overlapping marker will increase. So that it can cluster again and increase the count over the cluster.
 
-To enable clustering in markers, set the `AllowClustering` property of `MapsMarkerClusterSettings` as "**true**" and customization of clustering can be done with the `MapsMarkerClusterSettings` class.
+To enable clustering in markers, set the `AllowClustering` property of `MapsMarkerClusterSettings` as **true** and customization of clustering can be done with the `MapsMarkerClusterSettings`.
 
 {% aspTab template="maps/markers/marker-cluster", sourceFiles="marker-cluster.cs" %}
 
@@ -148,7 +148,7 @@ The following properties are available to customize the marker clustering in the
 
 ## Expanding the marker cluster
 
-The cluster is formed by grouping an identical and non-identical marker from the surrounding area. By clicking on the cluster and setting the `AllowClusterExpand` property in `MapsMarkerClusterSettings` as "**true**" to expand the identical markers. If zooming is performed in any of the locations of the cluster, the number on the cluster will decrease and the overlapping marker will be split into an individual marker on the map. When performing zoom out, it will increase the marker count and then cluster it again.
+The cluster is formed by grouping an identical and non-identical marker from the surrounding area. By clicking on the cluster and setting the `AllowClusterExpand` property in `MapsMarkerClusterSettings` as **true** to expand the identical markers. If zooming is performed in any of the locations of the cluster, the number on the cluster will decrease and the overlapping marker will be split into an individual marker on the map. When performing zoom out, it will increase the marker count and then cluster it again.
 
 {% aspTab template="maps/markers/cluster", sourceFiles="cluster.cs" %}
 
@@ -158,8 +158,10 @@ The cluster is formed by grouping an identical and non-identical marker from the
 
 ## Tooltip for marker
 
-Tooltip is used to display more information about a marker on mouse over or touch end event. This can be enabled separately for marker by setting the `Visible` property of `MapsTooltipSettings` property to "**true**". The `ValuePath` property in the `MapsTooltipSettings` takes the field name that presents in dataSource and displays that value as tooltip text. The following example illustrates enabling the tooltip for the marker.
+Tooltip is used to display more information about a marker on mouse over or touch end event. This can be enabled separately for marker by setting the `Visible` property of `MapsTooltipSettings` to **true**. The `ValuePath` property in the `MapsTooltipSettings` takes the field name that presents in dataSource and displays that value as tooltip text.
 
 {% aspTab template="maps/markers/marker-tooltip", sourceFiles="marker-tooltip.cs" %}
 
 {% endaspTab %}
+
+![Maps with marker Tooltip](./images/Marker/MarkerTooltip.png)

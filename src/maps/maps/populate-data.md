@@ -1,7 +1,5 @@
 # Populate data
 
-This section explains how to populate data inputs and provide it to the Maps component.
-
 ## Shape data
 
 The shape data collection describes geographical shape information that is available in GeoJSON format. The Map shapes are rendered with this data. The custom shapes such as seat selection in bus, seat selection in a cricket stadium and more useful information can be also added as ShapeData in the layer of the Maps.
@@ -71,7 +69,7 @@ The following properties in the `Layers` are used for binding data in the Maps c
 
 The `ShapePropertyPath` property is used to refer the field name in the `ShapeData` property of shape layers to identify the shape. When the values of `ShapeDataPath` property from the `DataSource` property and `ShapePropertyPath` property from the `ShapeData` property match, then the associated object from the data source is bound to the corresponding shape.
 
-> `world-map.json` file contains following data and its field **"name"** value is used to map the corresponding shape with the provided data source.
+>`world-map.json` file contains following data and its field **name** value is used to map the corresponding shape with the provided data source.
 
 ```json
 {
@@ -91,7 +89,7 @@ The `ShapePropertyPath` property is used to refer the field name in the `ShapeDa
 
 The `ShapeDataPath` property is similar to the `ShapePropertyPath` property, but it refers to the field name in the `DataSource` property. For example, [populationData](#data-source) contains the **code**, **value**, **name**, **population** and **density** fields. Here, the **name** field is set to the shapeDataPath to map the corresponding value of field name in shape data.
 
-In the below example, both "**name**" fields contain the same value as "**Afghanistan**", this value is matched in both shape data and data source, so that the details associated with "**Afghanistan**" will be mapped to the corresponding shape and used to color the corresponding shape, display data labels, display tooltips, and more.
+In the below example, both **name** fields contain the same value as **Afghanistan**, this value is matched in both shape data and data source, so that the details associated with **Afghanistan** will be mapped to the corresponding shape and used to color the corresponding shape, display data labels, display tooltips, and more.
 
 {% aspTab template="maps/populate-data", sourceFiles="populate-data.cs" %}
 
@@ -107,7 +105,7 @@ Data from data source can be bind to the Maps in two different ways.
 
 2. Bind the field name as `data.field` to the properties as `ShapeDataPath`, `ColorValuePath`, `ValuePath` and `ShapeValuePath`.
 
-Refer complex support for data source as illustrated in the following example. Also, refer the data values for [ViewBag.bubbleData](https://www.syncfusion.com/downloads/support/directtrac/general/ze/BubbleData-103021339), [ViewBag.complexData](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ComplexData1459638658) and [ViewBag.markerData](https://www.syncfusion.com/downloads/support/directtrac/general/ze/MarkerData357696841) here.
+Refer the data values for [ViewBag.bubbleData](https://www.syncfusion.com/downloads/support/directtrac/general/ze/BubbleData-103021339), [ViewBag.complexData](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ComplexData1459638658) and [ViewBag.markerData](https://www.syncfusion.com/downloads/support/directtrac/general/ze/MarkerData357696841) here.
 
 {% aspTab template="maps/complex-data", sourceFiles="complex-data.cs" %}
 

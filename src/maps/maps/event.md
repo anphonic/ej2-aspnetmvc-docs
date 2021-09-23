@@ -1,7 +1,5 @@
 # Events in Maps
 
-This section explains the list of events that will be triggered for appropriate actions in Maps.
-
 ## AnimationComplete
 
 When the animation in the component is completed, the [`AnimationComplete`](../api/maps/#animationcomplete) event will be triggered. To know more about the arguments of this event, refer [here](../api/maps/iAnimationCompleteEventArgs/)

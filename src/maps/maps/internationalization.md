@@ -18,7 +18,7 @@ Maps component using `Format` property in the `Maps`.
 
 ## Numeric format
 
-The numeric formats such as currency, percentage and so on can be displayed in the tooltip and data labels of the Maps using the `Format` property in the `Maps`. In the below example, the tooltip is globalized to **"German"** culture. When setting the `UseGroupingSeparator` property as "**true**", the numeric text in the Maps separates with the comma separator.
+The numeric formats such as currency, percentage and so on can be displayed in the tooltip and data labels of the Maps using the `Format` property in the `Maps`. In the below example, the tooltip is globalized to **German** culture. When setting the `UseGroupingSeparator` property as **true**, the numeric text in the Maps separates with the comma separator.
 
 {% aspTab template="maps/Internationalization", sourceFiles="internationalization.cs" %}
 

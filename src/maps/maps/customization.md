@@ -12,9 +12,9 @@ The width and height of the Maps can be set using the `Width` and `Height` prope
 
 ## Maps title
 
-The title for the Maps can be set using the `MapsTitleSettings` class. It can be customized using the following properties.
+The title for the Maps can be set using the `MapsTitleSettings`. It can be customized using the following properties.
 
-* `Alignment` - To customize the alignment for the text in the title for the Maps. The possible values are "**Center**", "**Near**" and "**Far**".
+* `Alignment` - To customize the alignment for the text in the title for the Maps. The possible values are **Center**, **Near** and **Far**.
 * `Description` - To set the description of the title in Maps.
 * `Text` - To set the text for the title in Maps.
 * `TextStyle` - To customize the text of the title in Maps.
@@ -41,7 +41,7 @@ The Maps control supports following themes.
 * HighContrastLight
 * Tailwind
 
-By default, the Maps are rendered by the **"Material"** theme. The theme of the Maps component is changed using the `Theme` property.
+By default, the Maps are rendered by the **Material** theme. The theme of the Maps component is changed using the `Theme` property.
 
 {% aspTab template="maps/customization/theme", sourceFiles="theme.cs" %}
 
@@ -65,7 +65,7 @@ The following properties are available to customize the container in the Maps.
 
 ## Customizing Maps area
 
-By default, the background color of the shape maps is set as white. To modify the background color of the Maps area, the `Background` property in the `MapsMapsAreaSettings` is used. The border of the Maps area can be customized using the `Border` property in the `MapsMapsAreaSettings` class.
+By default, the background color of the shape maps is set as **white**. To modify the background color of the Maps area, the `Background` property in the `MapsMapsAreaSettings` is used. The border of the Maps area can be customized using the `Border` property in the `MapsMapsAreaSettings` class.
 
 {% aspTab template="maps/customization/map-area", sourceFiles="map-area.cs" %}
 
@@ -123,7 +123,7 @@ The Maps control supports the following projection types:
 * Winkel3
 * AitOff
 
-By default, the Maps are rendered by the "**Mercator**" projection type in which the Maps are rendered based on the coordinates. So, the Maps is not stretched. To change the type of projection in the Maps, the `ProjectionType` property is used.
+By default, the Maps are rendered by the **Mercator** projection type in which the Maps are rendered based on the coordinates. So, the Maps is not stretched. To change the type of projection in the Maps, the `ProjectionType` property is used.
 
 {% aspTab template="maps/customization/projection", sourceFiles="projection.cs" %}
 

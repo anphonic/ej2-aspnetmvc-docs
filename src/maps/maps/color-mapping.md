@@ -6,15 +6,15 @@ Color mapping is used to customize the shape colors based on the given values. I
 2. Equal color mapping
 3. Desaturation color mapping
 
-To add color mapping to the shapes of the Maps, bind the data source to the `DataSource` property of `MapsLayer` class and set the field name which contains the color value in the data source to the `ColorValuePath` property.
+To add color mapping to the shapes of the Maps, bind the data source to the `DataSource` property of `MapsLayer` and set the field name which contains the color value in the data source to the `ColorValuePath` property.
 
 ## Types of color mapping
 
 ### Range color mapping
 
-Range color mapping applies the color to the shapes of the Maps which matches the numeric values in the data source within the given color mapping ranges. The `From` and `To` properties in the `MapsColorMapping` class are used to mention the color mapping ranges in the Maps.
+Range color mapping applies the color to the shapes of the Maps which matches the numeric values in the data source within the given color mapping ranges. The `From` and `To` properties in the `MapsColorMapping` are used to mention the color mapping ranges in the Maps.
 
-Bind the "**ViewBag.populationData**" data to the `DataSource` property of `MapsLayer` class and set the `ColorValuePath` property of `MapsShapeSettings` class as "**density**". The range values can be set using the `From` and `To` properties of `MapsColorMapping` class. Please find the data source used in the below sample which demonstrates the population density of some countries.
+Bind the **ViewBag.populationData** data to the `DataSource` property of `MapsLayer` and set the `ColorValuePath` property of `MapsShapeSettings` as **density**. The range values can be set using the `From` and `To` properties of `MapsColorMapping`.
 
 ```sh
  [
@@ -54,7 +54,7 @@ Bind the "**ViewBag.populationData**" data to the `DataSource` property of `Maps
 
 ### Equal color mapping
 
-Equal color mapping applies the color to the shapes of the Maps when the `Value` property of `MapsColorMapping` matches with the values provided in the data source. The following example shows how to apply equal color mapping to the shapes with the data source **"unCountries"** which illustrates the permanent and non-permanent countries in the UN security council.
+Equal color mapping applies the color to the shapes of the Maps when the `Value` property of `MapsColorMapping` matches with the values provided in the data source. The following example shows how to apply equal color mapping to the shapes with the data source **unCountries** which illustrates the permanent and non-permanent countries in the UN security council.
 
 ```sh
 [
@@ -76,7 +76,7 @@ Equal color mapping applies the color to the shapes of the Maps when the `Value`
 ]
 ```
 
-Bind the "**ViewBag.unitedCountries**" data to the `DataSource` property of `MapsLayer` class and set the `ColorValuePath` property of `MapsShapeSettings` class as "**Membership**". Set the `Value` property in the `MapsColorMapping` class to "**Permanent**" and "**Non-Permanent**" in the different set of shape color mapping properties. If the corresponding value of the `ColorValuePath` property matches with the corresponding field name in the data source, then the given color will be applied.
+Bind the **ViewBag.unitedCountries** data to the `DataSource` property of `MapsLayer` and set the `ColorValuePath` property of `MapsShapeSettings` as **Membership**. Set the `Value` property in the `MapsColorMapping` to **Permanent** and **Non-Permanent** in the different set of shape color mapping properties. If the corresponding value of the `ColorValuePath` property matches with the corresponding field name in the data source, then the given color will be applied.
 
 {% aspTab template="maps/colormapping/equalcolormapping", sourceFiles="equalcolormapping.cs" %}
 
@@ -86,11 +86,11 @@ Bind the "**ViewBag.unitedCountries**" data to the `DataSource` property of `Map
 
 ### Desaturation color mapping
 
-Desaturation color mapping applies the color to the shapes of the Maps, similar to the range color mapping. The opacity will be applied in this color mapping based on the `MinOpacity` and `MaxOpacity` properties in the `MapsColorMapping` class.
+Desaturation color mapping applies the color to the shapes of the Maps, similar to the range color mapping. The opacity will be applied in this color mapping based on the `MinOpacity` and `MaxOpacity` properties in the `MapsColorMapping`.
 
-> The following example shows how to apply desaturation color mapping to the shapes with the data source  **"Population_Density"** that is available in the [Range color mapping](#range-color-mapping) section.
+>The following example shows how to apply desaturation color mapping to the shapes with the data source  **Population_Density** that is available in the [Range color mapping](#range-color-mapping) section.
 
-Bind the **"Population_Density"** data to the `DataSource` property of `MapsLayer` class and set the `ColorValuePath` property of `MapsShapeSettings` class as **"density"**. The range values can be set using the `From` and `To` properties in the `MapsColorMapping` class.
+Bind the **Population_Density** data to the `DataSource` property of `MapsLayer` class and set the `ColorValuePath` property of `MapsShapeSettings` as **density**. The range values can be set using the `From` and `To` properties in the `MapsColorMapping`.
 
 {% aspTab template="maps/colormapping/desaturationcolormapping", sourceFiles="desaturationcolormapping.cs" %}
 
@@ -98,15 +98,15 @@ Bind the **"Population_Density"** data to the `DataSource` property of `MapsLaye
 
 ![Desaturation color mapping](./images/Colormapping/desaturation-colormapping.PNG)
 
-> Refer the data values of [Population-density.json](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Population-density-1298888173) here.
+>Refer the data values of [Population-density.json](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Population-density-1298888173) here.
 
 ## Multiple colors for a single shape
 
-Multiple colors can be added to the color mapping which can be used as gradient effect to a specific shape based on the ranges in the data source. By using the `Color` property of `MapsColorMapping` class, any number of colors can be set to the shapes as a gradient.
+Multiple colors can be added to the color mapping which can be used as gradient effect to a specific shape based on the ranges in the data source. By using the `Color` property of `MapsColorMapping`, any number of colors can be set to the shapes as a gradient.
 
-> The following example demonstrates how to use multiple colors in color mapping with the data source  **"Population_Density"** that is available in the [Range color mapping](#range-color-mapping) section.
+>The following example demonstrates how to use multiple colors in color mapping with the data source  **Population_Density** that is available in the [Range color mapping](#range-color-mapping) section.
 
-Bind the **"Population_Density"** data to the `DataSource` property of `MapsLayer` class and set the `ColorValuePath` property of `MapsShapeSettings` class as **"density"**. The range values can be set using the `From` and `To` properties of `MapsColorMapping` class.
+Bind the **Population_Density** data to the `DataSource` property of `MapsLayer` class and set the `ColorValuePath` property of `MapsShapeSettings` as **density**. The range values can be set using the `From` and `To` properties of `MapsColorMapping`.
 
 {% aspTab template="maps/colormapping/desaturationwithmultiplecolors", sourceFiles="desaturationwithmultiplecolors.cs" %}
 
@@ -114,15 +114,15 @@ Bind the **"Population_Density"** data to the `DataSource` property of `MapsLaye
 
 ![Desaturation with multiple colors](./images/Colormapping/desaturation-multiple-color.PNG)
 
-> Refer the data values of [Population-density.json](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Population-density-1298888173) here.
+>Refer the data values of [Population-density.json](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Population-density-1298888173) here.
 
 ## Color for items excluded from color mapping
 
-Color mapping can be applied to the shapes in the Maps which does not match color mapping criteria such as range or equal values using the `Color` property of `MapsColorMapping` class.
+Color mapping can be applied to the shapes in the Maps which does not match color mapping criteria such as range or equal values using the `Color` property of `MapsColorMapping`.
 
-> The following example shows how to set the color for items excluded from the color mapping with the data source **"Population_Density"** that is available in the [Range color mapping](#range-color-mapping) section.
+>The following example shows how to set the color for items excluded from the color mapping with the data source **Population_Density** that is available in the [Range color mapping](#range-color-mapping) section.
 
-In the following example, color mapping is added for the ranges from 0 to 200. If there are any records in the data source that are outside of this range, the color mapping will not be applied. To apply the color for these excluded items, set the `Color` property alone in the `MapsColorMapping` class.
+In the following example, color mapping is added for the ranges from 0 to 200. If there are any records in the data source that are outside of this range, the color mapping will not be applied. To apply the color for these excluded items, set the `Color` property alone in the `MapsColorMapping`.
 
 {% aspTab template="maps/colormapping/excludedcolormapping", sourceFiles="excludedcolormapping.cs" %}
 

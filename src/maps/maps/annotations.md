@@ -6,9 +6,9 @@ Annotations are used to mark the specific area of interest in the Maps with text
 
 ## Annotation
 
-By using the `Content` property of `MapsAnnotation` class, text content or id of an element or an HTML string can be specified to render a new HTML element in Maps.
+By using the `Content` property of `MapsAnnotation`, text content or id of an element or an HTML string can be specified to render a new HTML element in Maps.
 
-{% aspTab template="maps/annotations/annotation", sourceFiles="annotation.cs" %}
+{% aspTab template="maps/annotations", sourceFiles="annotation.cs" %}
 
 {% endaspTab %}
 
@@ -18,7 +18,7 @@ By using the `Content` property of `MapsAnnotation` class, text content or id of
 
 ### Changing the z-index
 
-The stack order of an annotation element can be changed using the `ZIndex` property in the `MapsAnnotation` class.
+The stack order of an annotation element can be changed using the `ZIndex` property in the `MapsAnnotation`.
 
 {% aspTab template="maps/annotations/annotaion-zindex", sourceFiles="annotaion-zindex.cs" %}
 
@@ -28,7 +28,7 @@ The stack order of an annotation element can be changed using the `ZIndex` prop
 
 ### Positioning an annotation
 
-Annotations can be placed anywhere in the Maps by specifying pixel or percentage values to the `X` and `Y` properties in the `MapsAnnotation` class.
+Annotations can be placed anywhere in the Maps by specifying pixel or percentage values to the `X` and `Y` properties in the `MapsAnnotation`.
 
 {% aspTab template="maps/annotations/annotation-position", sourceFiles="annotation-position.cs" %}
 
@@ -38,7 +38,7 @@ Annotations can be placed anywhere in the Maps by specifying pixel or percentage
 
 ### Alignment of an annotation
 
-Annotations can be aligned using the `HorizontalAlignment` and `VerticalAlignment` properties in the `MapsAnnotation` class. The possible values can be "**Center**", "**Far**", "**Near**" and "**None**".
+Annotations can be aligned using the `HorizontalAlignment` and `VerticalAlignment` properties in the `MapsAnnotation`. The possible values can be **Center**, **Far**, **Near** and **None**.
 
 {% aspTab template="maps/annotations/annotation-alignment", sourceFiles="annotation-alignment.cs" %}
 
@@ -48,7 +48,7 @@ Annotations can be aligned using the `HorizontalAlignment` and `VerticalAlignmen
 
 ## Multiple Annotation
 
-Multiple annotations can be added to the Maps by adding Multiple `MapsAnnotation` classes in the `MapsAnnotations` class and customization for the annotations can be done with the `MapsAnnotation` class.
+Multiple annotations can be added to the Maps by adding Multiple `MapsAnnotation` in the `MapsAnnotations` and customization for the annotations can be done with the `MapsAnnotation`.
 
 {% aspTab template="maps/annotations/multiple-annotation", sourceFiles="multiple-annotation.cs" %}
 

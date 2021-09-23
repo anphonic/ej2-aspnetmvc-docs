@@ -1,6 +1,6 @@
 # Legend
 
-A Legend is a visual representation of the symbols used on the map. It can be represented in various colors, shapes or other identifiers based on the data and provides valuable information for interpreting what the Maps are displaying. It explains what each symbol in the Maps represents. Legends are enabled by setting the `Visible` property of `MapsLegendSettings` class to "**true**".
+A Legend is a visual representation of the symbols used on the Maps. It can be represented in various colors, shapes or other identifiers based on the data and provides valuable information for interpreting what the Maps are displaying. It explains what each symbol in the Maps represents. Legends are enabled by setting the `Visible` property of `MapsLegendSettings` to **true**.
 
 ## Modes of legend
 
@@ -10,11 +10,11 @@ Legend had two types of mode.
 
 ### Default mode
 
-Default mode legends having symbols with legend labels, used to identify the shape or bubble or marker color. To enable this option by setting the `Mode` property of `MapsLegendSettings` as "**Default**".
+Default mode legends having symbols with legend labels, used to identify the shape or bubble or marker color. To enable this option by setting the `Mode` property of `MapsLegendSettings` as **Default**.
 
 ### Interactive mode
 
-The legends can be made interactive with an arrow mark indicating the exact range color in the legend when the mouse hovers over the corresponding shapes. To enable this type of mode by setting the `Mode` property of `MapsLegendSettings` as "**Interactive**". The `InvertedPointer` property is used to enable or disable the visibility of the inverted pointer in interactive legend in Maps.
+The legends can be made interactive with an arrow mark indicating the exact range color in the legend when the mouse hovers over the corresponding shapes. To enable this type of mode by setting the `Mode` property of `MapsLegendSettings` as **Interactive**. The `InvertedPointer` property is used to enable or disable the visibility of the inverted pointer in interactive legend in Maps.
 
 {% aspTab template="maps/legendproperties/legend-mode", sourceFiles="legend-mode.cs" %}
 
@@ -31,18 +31,18 @@ The legend can be positioned in the following two ways:
 
 <b>Absolute position</b>
 
-The legend of the Maps can be positioned using the `Location` property in the `MapsLegendSettings` class. For positioning the legend based on co-ordinates corresponding to a Maps, the `Position` property is set as "**Float**".
+The legend of the Maps can be positioned using the `Location` property in the `MapsLegendSettings`. For positioning the legend based on co-ordinates corresponding to a Maps, the `Position` property is set as **Float**.
 
 <b>Dock position</b>
 
-Legends are positioned in the following locations within the container. The `Position` property in `MapsLegendSettings` class is used to set these options in Maps.
+Legends are positioned in the following locations within the container. The `Position` property in `MapsLegendSettings` is used to set these options in Maps.
 
 * Top
 * Left
 * Bottom
 * Right
 
-The above four positions can be aligned with combination of "**Near**", "**Center**" and "**Far**" using `Alignment` property in `MapsLegendSettings` class. So, the legend can be aligned to 12 positions.
+The above four positions can be aligned with combination of **Near**, **Center** and **Far** using `Alignment` property in `MapsLegendSettings`. So, the legend can be aligned to 12 positions.
 
 {% aspTab template="maps/legendproperties/legend-position", sourceFiles="legend-position.cs" %}
 
@@ -54,7 +54,7 @@ The above four positions can be aligned with combination of "**Near**", "**Cente
 
 Legend for shapes can be generated from color mapping types such as equal color mapping, range color mapping and desaturation color mapping.
 
-The below code snippet demonstrate the equal color mapping legends for the shapes. To bind the given data source to the `DataSource` property of `MapsLayer` class. Set the value of `ShapePropertyPath` to **"name"** and `ShapeDataPath` to **"Country"**. To enable equal color mapping, set the multiple `MapsColorMapping` classes to the `MapsShapeSettings` class. Finally, set the `Visible` property of `MapsLegendSettings` as "**true**". The `Label` property in `MapsColorMapping` class is used to set the text name for legend in Maps.
+The below code snippet demonstrate the equal color mapping legends for the shapes. To bind the given data source to the `DataSource` property of `MapsLayer`. Set the value of `ShapePropertyPath` to **name** and `ShapeDataPath` to **Country**. To enable equal color mapping, set the multiple `MapsColorMapping` to the `MapsShapeSettings`. Finally, set the `Visible` property of `MapsLegendSettings` as **true**. The `Label` property in `MapsColorMapping` is used to set the text name for legend in Maps.
 
 {% aspTab template="maps/legend", sourceFiles="legend.cs" %}
 
@@ -85,16 +85,16 @@ The following properties are available in legend to customize the legend shape a
 
 * `Background` - To customize the background color of the Legend.
 * `Border` - To customize the color, width and opacity of the border for the Legend.
-* `Fill` - To apply the color for the Legend in Maps.
-* `LabelDisplayMode` - To customize the display mode for the Legend text in Maps.
-* `LabelPosition` - To customize the position of the Legend text in Maps.
-* `Orientation` - To customize the orientation of the Legend in Maps.
-* `TextStyle` - To customize the text style for Legend in Maps.
-* `Title` - To apply the title for the Legend in Maps.
-* `TitleStyle` - To customize the style of the title for the Legend in Maps.
-* `Height` - To customize the height of the Legend in Maps.
-* `Width` - To customize the width of the Legend in Maps.
-* `Opacity` - To apply the opacity to the Legend in Maps.
+* `Fill` - To apply the color for the Legend.
+* `LabelDisplayMode` - To customize the display mode for the Legend text.
+* `LabelPosition` - To customize the position of the Legend text.
+* `Orientation` - To customize the orientation of the Legend.
+* `TextStyle` - To customize the text style for Legend.
+* `Title` - To apply the title for the Legend.
+* `TitleStyle` - To customize the style of the title for the Legend.
+* `Height` - To customize the height of the Legend.
+* `Width` - To customize the width of the Legend.
+* `Opacity` - To apply the opacity to the Legend.
 
 {% aspTab template="maps/legendproperties/legend-customization", sourceFiles="legend-customization.cs" %}
 
@@ -104,7 +104,7 @@ The following properties are available in legend to customize the legend shape a
 
 ### Legend for items excluded from color mapping
 
-The legend can be enabled for items excluded from the color mapping using the `Color` property in `MapsColorMapping` class. Refer to the "**population_density**" data which demonstrates the population density of some countries.
+The legend can be enabled for items excluded from the color mapping using the `Color` property in `MapsColorMapping`. Refer to the **population_density** data which demonstrates the population density of some countries.
 
 ```sh
  [
@@ -134,7 +134,7 @@ The legend can be enabled for items excluded from the color mapping using the `C
     ];
 ```
 
-The following example shows how to enable legend for items excluded from the color mapping. In the following example, color mapping is added for the ranges from "**0**" to "**200**". If there are any records in the data source that are outside of this range, the color mapping will not be applied. To apply the color for these excluded items, set the `Color` property alone in the `MapsColorMapping` property. To enable legend for these items, set the `Visible` property of `MapsLegendSettings` class to "**true**".
+In the following example, color mapping is added for the ranges from **0** to **200**. If there are any records in the data source that are outside of this range, the color mapping will not be applied. To apply the color for these excluded items, set the `Color` property alone in the `MapsColorMapping`. To enable legend for these items, set the `Visible` property of `MapsLegendSettings` to **true**.
 
 {% aspTab template="maps/legendproperties/excludelegend", sourceFiles="excludelegend.cs" %}
 
@@ -144,7 +144,7 @@ The following example shows how to enable legend for items excluded from the col
 
 ### Hide desired legend items
 
-Use the `ShowLegend` property in the `MapsColorMapping` class to show or hide the desired legend items in Maps. If the `ShowLegend` property is set to "**false**", the legend item will be hidden. otherwise, it will be visible.
+Use the `ShowLegend` property in the `MapsColorMapping` to show or hide the desired legend items in Maps. If the `ShowLegend` property is set to **false**, the legend item will be hidden. otherwise, it will be visible.
 
 {% aspTab template="maps/legendproperties/hidelegend", sourceFiles="hidelegend.cs" %}
 
@@ -164,7 +164,7 @@ Depending on the boolean values provided in the data source, the legend items wi
 
 ### Binding legend item text from data source
 
-To show the legend text based on values provided in the data source, use the `ValuePath` property in the `MapsLegendSettings` class.
+To show the legend text based on values provided in the data source, use the `ValuePath` property in the `MapsLegendSettings`.
 
 {% aspTab template="maps/legendproperties/bindlegendtext", sourceFiles="bindlegendtext.cs" %}
 
@@ -174,7 +174,7 @@ To show the legend text based on values provided in the data source, use the `Va
 
 ### Hide duplicate legend items
 
-To hide the duplicate legend items in Maps, set the `RemoveDuplicateLegend` property to "**true**" in the `MapsLegendSettings` class.
+To hide the duplicate legend items in Maps, set the `RemoveDuplicateLegend` property to **true** in the `MapsLegendSettings`.
 
 {% aspTab template="maps/legendproperties/duplicatelegend", sourceFiles="duplicatelegend.cs" %}
 
@@ -184,7 +184,7 @@ To hide the duplicate legend items in Maps, set the `RemoveDuplicateLegend` prop
 
 ### Toggle option in legend
 
-The toggle option has been provided for legend. If the legend can be toggled, the given color will be changed to the corresponding map shape item. To enable the toggle options in Legend, set the `Enable` property of the `MapsToggleLegendSettings` class to "**true**".
+The toggle option has been provided for legend. If the legend can be toggled, the given color will be changed to the corresponding Maps shape item. To enable the toggle options in Legend, set the `Enable` property of the `MapsToggleLegendSettings` to **true**.
 
 The following properties are available to customize the toggle option in legend.
 
@@ -192,8 +192,6 @@ The following properties are available to customize the toggle option in legend.
 * `Fill` - To apply the color to the shape of the Maps for which legend item is toggled.
 * `Opacity` – To customize the transparency for the shapes for which legend item is toggled.
 * `Border` – To customize the color, width and opacity of the border of the shapes in Maps.
-
-The following example demonstrates how to enable the toggle option to legend.
 
 {% aspTab template="maps/legendproperties/togglelegend", sourceFiles="togglelegend.cs" %}
 
@@ -203,7 +201,7 @@ The following example demonstrates how to enable the toggle option to legend.
 
 ## Enable legend for bubbles
 
-To enable the legend for the bubble by setting the `Visible` property of `MapsLegendSettings` class as "**true**" and `Type` property of `MapsLegendSettings` class as "**Bubbles**". Refer to the below code snippet to enable the legend for bubbles with each bubble different colors rendering.
+To enable the legend for the bubble by setting the `Visible` property of `MapsLegendSettings` as **true** and `Type` property of `MapsLegendSettings` as **Bubbles**.
 
 {% aspTab template="maps/bubble/bubble-legend", sourceFiles="bubble-legend.cs" %}
 
@@ -213,7 +211,7 @@ To enable the legend for the bubble by setting the `Visible` property of `MapsLe
 
 ## Enable legend for markers
 
-To enable legend for marker by setting the `Visible` property of `MapsLegendSettings` class as "**true**" and `Type` property of `MapsLegendSettings` class as "**Markers**". The `LegendText` property in the `MapsMarker` class can be used to show the legend text based on values provided in the data source. Refer to the below example to enable the legend for the markers.
+To enable legend for marker by setting the `Visible` property of `MapsLegendSettings` as **true** and `Type` property of `MapsLegendSettings` as **Markers**. The `LegendText` property in the `MapsMarker` can be used to show the legend text based on values provided in the data source.
 
 {% aspTab template="maps/markers/legend", sourceFiles="legend.cs" %}
 

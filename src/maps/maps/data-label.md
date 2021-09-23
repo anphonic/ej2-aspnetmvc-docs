@@ -1,10 +1,10 @@
 # Data labels
 
-Data labels provide information to users about the shapes of the Maps component. It can be enabled by setting the `Visible` property of the `MapsDataLabelSettings` class to "**true**".
+Data labels provide information to users about the shapes of the Maps component. It can be enabled by setting the `Visible` property of the `MapsDataLabelSettings` to **true**.
 
 ## Adding data labels
 
-To display data labels in the Maps, the `LabelPath` property of `MapsDataLabelSettings` class must be used. The value of the `LabelPath` property can be taken from the field name in the shape data or data source. In the following example, the value of the `LabelPath` property is the field name in the shape data of the Maps layer.
+To display data labels in the Maps, the `LabelPath` property of `MapsDataLabelSettings` must be used. The value of the `LabelPath` property can be taken from the field name in the shape data or data source. In the following example, the value of the `LabelPath` property is the field name in the shape data of the Maps layer.
 
 {% aspTab template="maps/datalabel/label", sourceFiles="label.cs" %}
 
@@ -22,7 +22,7 @@ In the following example, the value of `LabelPath` property is set from the fiel
 
 ## Customization
 
-The following properties are available in the `MapsDataLabelSettings` class to customize the data label of the Maps component.
+The following properties are available in the `MapsDataLabelSettings` to customize the data label of the Maps component.
 
 * `Border` - To customize the color, width and opacity for the border of the data labels in Maps.
 * `Fill` - To apply the color of the data labels in Maps.
@@ -65,9 +65,9 @@ The Maps component provides an option to handle the labels when a label intersec
 
 ## Adding data label as a template
 
-The data label can be added as a template in the Maps component. The `Template` property of `MapsDataLabelSettings` class is used to set the data label as a template. Any text or HTML element can be added as the template in data labels.
+The data label can be added as a template in the Maps component. The `Template` property of `MapsDataLabelSettings` is used to set the data label as a template. Any text or HTML element can be added as the template in data labels.
 
-> Note: The customization properties of data label, `SmartLabelMode` and `IntersectionAction` properties are not applicable to `Template` property. The styles can be applied to the label template using the CSS styles of the template element.
+>The customization properties of data label, `SmartLabelMode` and `IntersectionAction` properties are not applicable to `Template` property. The styles can be applied to the label template using the CSS styles of the template element.
 
 {% aspTab template="maps/datalabel/label-template", sourceFiles="label-template.cs" %}
 
