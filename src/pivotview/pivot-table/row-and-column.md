@@ -97,6 +97,34 @@ Allows end user to wrap the cell content to the next line when it exceeds the bo
 
 ![output](images/textwrap.png)
 
+### Autofit columns
+
+Allows the user to fit the Pivot Table columns as wide as the content of the cell without wrapping. It auto fits all of the Pivot Table columns by invoking the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method from the grid instance.
+
+{% aspTab template="pivot-table/grid-customization/autofit-method", sourceFiles="autofit-method.cs" %}
+
+{% endaspTab %}
+
+![output](images/autofit-method.png)
+
+> The minimum width of 250 pixels is set by default with the grouping bar UI for the first column and cannot be reduced further. So, when the grouping bar is enabled, one can auto fit the Pivot Table columns by calling the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method from the grid instance with the parameter contained pivot table columns field name excluding first column.
+
+{% aspTab template="pivot-table/grid-customization/autofit-groupingbar", sourceFiles="autofit-groupingbar.cs" %}
+
+{% endaspTab %}
+
+![output](images/autofit-grouping.png)
+
+### Autofit specific columns
+
+During initial rendering, the parameter `autoFit` in the [`columnRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnRender) event under [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) can be set to **true** to auto fit specific columns.
+
+{% aspTab template="pivot-table/grid-customization/autofit-event", sourceFiles="autofit-event.cs" %}
+
+{% endaspTab %}
+
+![output](images/autofit-event.png)
+
 ## Grid Lines
 
 Allows end user to display cell border for each cells using [`GridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_GridLines) property in [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) class.

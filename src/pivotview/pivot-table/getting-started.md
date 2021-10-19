@@ -188,3 +188,5 @@ The calculated field feature allows user to insert or add a new calculated field
 Output be like the below.
 
 ![Alt text](./images/pivotgrid-sample.png)
+
+> You can refer to our [ASP.NET MVC Pivot Table](https://www.syncfusion.com/aspnet-mvc-ui-controls/pivot-table) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Pivot Table example](https://ej2.syncfusion.com/aspnetmvc/PivotTable/Default#/material) that shows how to rendering of the pivot table with drill-up and drill-down functionality bound to a relational report.

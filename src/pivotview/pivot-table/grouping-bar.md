@@ -155,6 +155,18 @@ In the below sample, the dropdown icon of field "Sold" is hidden.
 
  >The property [`ShowFilterIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_ShowFilterIcon), [`ShowSortIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_ShowSortIcon), [`ShowValueTypeIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_ShowValueTypeIcon) and [`AllowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_AllowDragAndDrop) in fields of [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) are applicable for both grouping bar and field list.
 
+## Show values button
+
+During runtime, the **Values** button in the grouping bar can be moved to a different position (i.e., different index) among other fields in the column or row axis. To enable the **Values** button, set the [`showValuesButton`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowValuesButton) property to **true**.
+
+> This support is only available for relational data sources.
+
+{% aspTab template="pivot-table/field-list/groupingbar-valuesbutton", sourceFiles="groupingbar-valuesbutton.cs" %}
+
+{% endaspTab %}
+
+![output](images/groupingbarvaluebutton.png)
+
 ## Event
 
 ### OnFieldDropped

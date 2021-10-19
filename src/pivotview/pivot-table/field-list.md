@@ -123,6 +123,18 @@ Defer layout update support to update the pivot table only on demand and not dur
 
 ![output](images/fieldlist_deferupdate.png)
 
+## Show built-in Field List (Popup) over specific target
+
+By passing the target element to the built-in field list dialog module in the [`dataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataBound) event, the field list dialog will be displayed over the appropriate target element on a web page. By default, the Pivot Table's parent element is used as the target element to display the built-in field list dialog.
+
+The sample code below shows the built-in field list dialog using `document.body` as the target element.
+
+{% aspTab template="pivot-table/field-list/fieldlist-on-specifictarget", sourceFiles="fieldlist-on-specifictarget.cs" %}
+
+{% endaspTab %}
+
+![output](images/popup-fieldlist-specifictarget.png)
+
 ## Show field list using toolbar
 
 It can also be viewed in toolbar by setting [`ShowFieldList`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDeferLayoutUpdate) and [`ShowToolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDeferLayoutUpdate) properties in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**. Also, include the item **FieldList** within the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDeferLayoutUpdate) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class. When toolbar is enabled, field list icon will be automatically added into the toolbar and the icon won't appear on top left corner in the pivot table component.
@@ -144,6 +156,16 @@ In the sample, we have set caption to the fields `Year` and `Quarter` dynamicall
 {% endaspTab %}
 
 ![output](images/fieldlist_caption1.png)
+
+During runtime, the **Values** button in the field list can be moved to a different position (i.e., different index) among other fields in the column or row axis. To enable the **Values** button, set the [`showValuesButton`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ShowValuesButton) property to **true**.
+
+> This support is only available for relational data sources.
+
+{% aspTab template="pivot-table/field-list/fieldlist-valuesbutton", sourceFiles="fieldlist-valuesbutton.cs" %}
+
+{% endaspTab %}
+
+![output](images/fieldlistmeasureatdifferentposition.png)
 
 ## Events
 

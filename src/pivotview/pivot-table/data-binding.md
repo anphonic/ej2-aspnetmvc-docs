@@ -202,6 +202,18 @@ By default, the value fields are plotted in column axis. To plot those fields in
 
 ![output](images/valueaxis.png)
 
+## Values at different positions
+
+By default, the value fields are placed at the end of the row or column axis. To place those value fields in different positions, use the [`valueIndex`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_valueindex) property and set the value to an appropriate index position. Its default value is **-1**, which denotes the last position. The `valueIndex` property is dependent on the [`valueAxis`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_valueAxis) property.
+
+> This support is only available for relational data sources. Also, enable the [`showValuesButton`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowValuesButton) property in the grouping bar and field list UI to **true** to re-arrange the values fields at different positions via user interaction.
+
+{% aspTab template="pivot-table/data-binding/measureatdifferentposition", sourceFiles="measureatdifferentposition.cs" %}
+
+{% endaspTab %}
+
+![output](images/measureatdifferentposition.png)
+
 ## Show 'no data' items
 
 By default, the pivot table only shows the field item if it has data in its row or column combination. To show all items that do not have data in row and column combination in the pivot table, use the [`ShowNoDataItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_ShowNoDataItems) property by settings its value to **true** for the desired fields. In the following code sample, rows of the "Country" and "Products" fields do not have data in all combination with "Year" and "Quarter" column field.
@@ -263,3 +275,4 @@ The event `EnginePopulating` triggers  before the pivot engine starts to populat
 * [Aggregation](./aggregation)
 * [Show/Hide Totals](./summary-customization)
 * [Customize number, date, and time values](./how-to/customize-number-date-and-time-values)
+* [Server Side Engine (Optional)](./server-side-pivot-engine)
