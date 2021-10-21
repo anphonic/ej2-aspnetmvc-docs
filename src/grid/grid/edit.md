@@ -117,7 +117,7 @@ In the below demo, we have update the `TotalCost` column value based on the `Uni
 
 You can prevent the CRUD operations of the Grid by using condition in the `actionBegin` event with requestType as `beginEdit` for editing, `add` for adding and `delete` for deleting actions.
 
-In the below demo, we prevent the CRUD operation based on the `Role` column value. If the Role Column is ‘employee’, we are unable to edit/delete that row.
+In the below demo, we prevent the CRUD operation based on the `Role` column value. If the Role Column is `Employee`, we are unable to edit/delete that row.
 
 {% aspTab template="grid/edit/cancel-edit-inline", sourceFiles="canceleditinline.cs" %}
 
@@ -140,6 +140,16 @@ You can bulk save (added, changed and deleted data in the single request) to dat
 To enable Batch edit, set the [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) of [`EditSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) as **Batch**.
 
 {% aspTab template="grid/edit/batch", sourceFiles="batch.cs" %}
+
+{% endaspTab %}
+
+#### Cancel edit based on condition in Batch mode
+
+You can prevent the CRUD operations of the Batch edit Grid by using condition in the `cellEdit`, `beforeBatchAdd` and `beforeBatchDelete` events for Edit, Add and Delete actions respectively.
+
+In the below demo, we prevent the CRUD operation based on the `Role` column value. If the Role Column is `Employee`, we are unable to edit/delete that row.
+
+{% aspTab template="grid/edit/cancel-edit-batch", sourceFiles="canceleditbatch.cs" %}
 
 {% endaspTab %}
 
