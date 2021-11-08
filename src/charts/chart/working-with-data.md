@@ -56,7 +56,7 @@ By using `EmptyPointSettings` property in series, you can customize the empty po
 
 {% endaspTab %}
 
-# Lazy loading
+## Lazy loading
 
 Lazy loading allows you to load data for chart on demand. Chart will fire the scrollEnd event, in that we can
 get the minimum and maximum range of the axis, based on this, we can upload the data to chart.

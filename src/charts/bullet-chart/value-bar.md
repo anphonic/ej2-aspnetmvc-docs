@@ -6,27 +6,31 @@ component: "Bullet Chart"
 description: "The main data value is encoded by a length of the main bar in the middle of the chart, known as the Feature Measure. "
 ---
 
-# Feature Bar
+# Actual Bar
 
-The main data value is encoded by a length of the main bar in the middle of the chart, known as the `Feature Measure`. This is also called as `value Bar`. Also, if you want to display the target bar you should map the `valueField` name from the dataSource.
+To display the primary data or the current value of the data being measured known as the **Feature Measure** that should be encoded as a bar. This is called as the **Actual Bar** or the **Feature Bar** in the Bullet Chart, and to display the actual bar the `valueField` should be mapped to the appropriate field from the data source.
 
 {% aspTab template="bullet-chart/value-bar/value-bar", sourceFiles="value-bar.cs" %}
 
 {% endaspTab %}
 
-## Feature Bar Types
+![Actual Bar in Bullet Chart](images/blazor-bullet-chart-actual-bar.png)
 
-You can customize the shape of the feature bar or value bar using the `type` property of the bullet chart. Feature bar contains `Rect` and `Dot` shapes. The default type of feature bar is `Rect`.
+## Types of Actual Bar
+
+The shape of the actual bar can be customized using the `type` property of the Bullet Chart. The actual bar contains `Rect` and `Dot` shapes. By default, the actual bar shape is Rect.
 
 {% aspTab template="bullet-chart/value-bar/types", sourceFiles="types.cs" %}
 
 {% endaspTab %}
 
-## Customization
+![Bullet Chart with Dot Actual Bar](images/blazor-bullet-chart-dot-actual-bar.png)
+
+## Actual Bar Customization
 
 ### Border Customization
 
-Using the `valueBorder` property of the bullet chart, you can customize the border `color` and `width` of the feature bar.
+Using the `valueBorder` property of the bullet chart, you can customize the border `color` and `width` of the actual bar.
 
 {% aspTab template="bullet-chart/value-bar/value-border", sourceFiles="value-border.cs" %}
 
@@ -34,8 +38,10 @@ Using the `valueBorder` property of the bullet chart, you can customize the bord
 
 ### Fill color and height Customization
 
-You can customize the fill color and height of the feature bar using the `valueFill` and `valueHeight` properties of the bullet chart.
+Customize the fill color and height of the actual bar using the `valueFill` and `valueHeight` properties of the bullet chart.
 
 {% aspTab template="bullet-chart/value-bar/value-fill", sourceFiles="value-fill.cs" %}
 
 {% endaspTab %}
+
+![Customizing Actual Bar in Bullet Chart](images/blazor-bullet-chart-actual-bar-customization.png)

@@ -6,29 +6,35 @@ component: "Bullet Chart"
 description: "The title and sub-title is very useful to understand the bullet chart in efficient way. It describes what kind of data which represtend by the bullet-chart. "
 ---
 
-# Title
+# Title and Subtitle
 
-A title can be given to a bullet chart using the `title` property to show information about the data plotted.
+## Title
+
+The title of the Bullet Chart displays the information about the data plotted by specifying it in the `title` property.
 
 {% aspTab template="bullet-chart/title/title", sourceFiles="title.cs" %}
 
 {% endaspTab %}
 
-## SubTitle
+![Bullet Chart with Title](images/blazor-bullet-chart-with-title.png)
 
-A subtitle can also be given to a bullet chart using the `subtitle` property to show additional information about the data plotted.
+## Subtitle
+
+To show additional information about the data plotted, the Bullet Chart can also be given a subtitle using the `subtitle` property.
 
 {% aspTab template="bullet-chart/title/sub-title", sourceFiles="sub-title.cs" %}
 
 {% endaspTab %}
 
+![Bullet Chart with Subtitle](images/blazor-bullet-chart-subtitle.png)
+
 ## Title and SubTitle Position
 
-You can place the title and subtitle in different positions. By using the `titlePosition` property of the bullet chart, you can place the title and subtitles in different positions like `left`, `right`, `top`, and `bottom`.
+The title and the subtitle positions can be customized using the `titlePosition` property. Possible positions are **Left**, **Right**, **Top**, and **Bottom**.
 
 ### Position as Left
 
-By setting the `titlePosition` to `Left`, you can display the title and subtitle at the left side of the chart.
+By setting the `titlePosition` to **Left**, you can display the title and subtitle at the left side of the Bullet Chart.
 
 {% aspTab template="bullet-chart/title/left", sourceFiles="left.cs" %}
 
@@ -36,7 +42,7 @@ By setting the `titlePosition` to `Left`, you can display the title and subtitle
 
 ### Position as Right
 
-By setting the `titlePosition` to `Right`, you can display the title and subtitle at the right side of the chart.
+By setting the `titlePosition` to **Right**, you can display the title and subtitle at the right side of the Bullet Chart.
 
 {% aspTab template="bullet-chart/title/right", sourceFiles="right.cs" %}
 
@@ -44,7 +50,7 @@ By setting the `titlePosition` to `Right`, you can display the title and subtitl
 
 ### Position as Top
 
-By setting the `titlePosition` to `Top`, you can display the title and subtitle at the top of the chart. The default title and subtitle positions of the bullet chart is `Top`.
+By setting the `titlePosition` to **Top**, you can display the title and subtitle at the top of the Bullet Chart. The default title and subtitle positions of the Bullet Chart is **Top**.
 
 {% aspTab template="bullet-chart/title/top", sourceFiles="top.cs" %}
 
@@ -52,15 +58,17 @@ By setting the `titlePosition` to `Top`, you can display the title and subtitle 
 
 ### Position as Bottom
 
-By setting the `titlePosition` to `Bottom`, you can display the title and subtitle at the bottom of the chart.
+By setting the `titlePosition` to **Bottom**, you can display the title and subtitle at the bottom of the Bullet Chart.
 
 {% aspTab template="bullet-chart/title/bottom", sourceFiles="bottom.cs" %}
 
 {% endaspTab %}
 
+![Title and Subtitle Position in Bullet Chart](images/blazor-bullet-chart-title-positions.png)
+
 ## Title Customization
 
-You can customize the bullet chart title’s `fontStyle`, `size`, `color`, `fontWeight`, and `fontFamily` using the `titleStyle` property.
+The title color, opacity, font size, font family, font weight, and font style can be customized using the `titleStyle` property.
 
 {% aspTab template="bullet-chart/title/title-custom", sourceFiles="title-custom.cs" %}
 
@@ -68,8 +76,10 @@ You can customize the bullet chart title’s `fontStyle`, `size`, `color`, `font
 
 ## SubTitle Customization
 
-You can customize the bullet chart subtitle’s `fontStyle`, `size`, `color`, `fontWeight`, and `fontFamily` using the `subtitleStyle` property.
+The sub-title color, opacity, font size, font family, font weight, and font style can be customized using the `subtitleStyle` property.
 
 {% aspTab template="bullet-chart/title/sub-title-custom", sourceFiles="sub-title-custom.cs" %}
 
 {% endaspTab %}
+
+![Customizing Title and Subtitle in Bullet Chart](images/blazor-bullet-chart-title-customization.png)

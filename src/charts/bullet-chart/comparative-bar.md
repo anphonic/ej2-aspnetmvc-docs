@@ -8,34 +8,33 @@ description: "The line marker that runs perpendicular to the orientation of the 
 
 # Target Bar
 
-The line marker that runs perpendicular to the orientation of the graph is known as the `Comparative Measure` and is used as a target marker to compare against the Feature Measure value. This is also called as `Target Bar` of the bullet chart. Also, if you want to display the target bar you should map the `targetField` name from the dataSource.
+The line marker that runs perpendicular to the orientation of the graph is known as the **Comparative Measure** and it is used as a target marker to compare against the feature measure value. This is also called as the **Target Bar** in the Bullet Chart. To display the target bar, the `targetField` should be mapped to the appropriate field from the datasource.
 
 {% aspTab template="bullet-chart/target-bar/target-bar", sourceFiles="target-bar.cs" %}
 
 {% endaspTab %}
 
-## Target Bar Types
+![Target Bar in Bullet Chart](images/blazor-bullet-chart-target-bar.png)
 
-You can customize the shape of the target bar or comparative bar using the `targetTypes` property of the bullet chart. Target bar contains `Circle`, `Cross`, and `Rect` shapes. The default type of target bar is `Rect`.
+## Types of Target Bar
+
+The shape of the target bar can be customized using the `targetTypes` property and it supports **Circle**, **Cross**, and **Rect** shapes. The default type of the target bar is **Rect**.
 
 {% aspTab template="bullet-chart/target-bar/target-types", sourceFiles="target-types.cs" %}
 
 {% endaspTab %}
 
-## Customization
+![Rectangle Target Bar with Bullet Chart](images/blazor-bullet-chart-rectangle-target-bar.png)
 
-### Color Customization
+## Target Bar Customization
 
-Using the `targetColor` property of the bullet chart, you can customize the fill color of the target bar.
+The following properties can be used to customize the Target Bar.
+
+* `targetColor` - Specifies the fill color of Target Bar.
+* `targetWidth` - Specifies the width of Target Bar.
 
 {% aspTab template="bullet-chart/target-bar/target-color", sourceFiles="target-color.cs" %}
 
 {% endaspTab %}
 
-### Width Customization
-
-You can customize the width of the target bar using the `targetWidth` property of the bullet chart.
-
-{% aspTab template="bullet-chart/target-bar/target-width", sourceFiles="target-width.cs" %}
-
-{% endaspTab %}
+![Customizing Target Bar in Bullet Chart](images/blazor-bullet-chart-target-bar-customization.png)

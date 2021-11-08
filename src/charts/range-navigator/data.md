@@ -12,29 +12,33 @@ description: "Range navigator supports double, datetime and logarithmic data val
 
 ## Numeric
 
-Numeric scale is used to represent the numeric values of data in a chart. By default, the valueType of a range navigator is Double.
+The numeric scale is used to represent the numeric values of data in a Range Selector. By default, the `valueType` of a Range Selector is **Double**.
 
 {% aspTab template="range-navigator/data/double", sourceFiles="double.cs" %}
 
 {% endaspTab %}
 
+![Numeric](images/data/double.png)
+
 ### Range
 
-Minimum and maximum of the Range navigator will be calculated automatically based on the provided data. You can also customize the range using the minimum, maximum, and interval properties.
+The minimum and the maximum of the scale will be calculated automatically based on the provided data. It can be customized by using the `minimum`, `maximum`, and `interval` properties.
 
 {% aspTab template="range-navigator/data/range", sourceFiles="range.cs" %}
 
 {% endaspTab %}
 
+![Numeric range](images/data/numeric-range.png)
+
 ### Label Format
 
-Numeric labels can be formatted using the labelFormat property.
-
-Numeric labels support all globalized formats.
+The numeric labels can be formatted using the `labelFormat` property and it supports all the globalized formats.
 
 {% aspTab template="range-navigator/data/format", sourceFiles="format.cs" %}
 
 {% endaspTab %}
+
+![Numeric label format](images/data/format.png)
 
 The following table describes the result of applying some commonly used label formats on numeric values.
 
@@ -98,55 +102,63 @@ The following table describes the result of applying some commonly used label fo
 
 ### Custom Label Format
 
-The range navigator also supports custom label formats using placeholders such as {value}$, in which, the value
-represent the axis label, e.g. 20$.
+The Range Selector also supports the Custom Label formats using the placeholders such as **{value}$**, in which the value represents the axis label, e.g. 20$.
 
 {% aspTab template="range-navigator/data/format", sourceFiles="format.cs" %}
 
 {% endaspTab %}
 
+![Custom label format](images/data/custom-format.png)
+
 ## Logarithmic Axis
 
 <!-- markdownlint-disable MD033 -->
 
-Logarithmic supports logarithmic scale, and it is used to visualize data when the Range navigator has numerical values
-in both lower (e.g.: 10-6) and higher (e.g.: 106) orders of magnitude.
+The Logarithmic supports the logarithmic scale, and it is used to visualize the data when the Range Selector has numerical values in both the lower (e.g.: 10-6) and the higher (e.g.: 106) orders of the magnitude.
 
 {% aspTab template="range-navigator/data/log", sourceFiles="log.cs" %}
 
 {% endaspTab %}
 
-**Range**
+![Logarithmic](images/data/log.png)
 
-Minimum and maximum of the Range navigator will be calculated automatically based on the provided data. You can also customize the range using the minimum, maximum, and interval properties.
+### Range
+
+The minimum and the maximum of the Range Selector will be calculated automatically based on the provided data. It can be customized by using the `minimum`, `maximum`, and `interval` properties.
 
 {% aspTab template="range-navigator/data/log-range", sourceFiles="log-range.cs" %}
 
 {% endaspTab %}
 
+![Logarithmic range](images/data/log-range.png)
+
 ### Logarithmic Base
 
-Logarithmic base can be customized using the logBase property. The default value of the logBase property is 10.
+The Logarithmic Base can be customized using the `logBase` property. The default value of this property is **10**.
 
 {% aspTab template="range-navigator/data/log-base", sourceFiles="log-base.cs" %}
 
 {% endaspTab %}
 
+![Logarithmic base](images/data/log-base.png)
+
 ## Date-time
 
-Date-time Range navigator supports date-time scale and displays date-time values as a labels in the specified format.
+The Range Selector supports the DateTime scale and displays the DateTime values as labels in the specified format.
 
 {% aspTab template="range-navigator/data/date-time", sourceFiles="date-time.cs" %}
 
 {% endaspTab %}
 
->Note: Date-time Range navigator supports date-time scale and displays date-time values as a labels in the specified format.
+![DateTime](images/data/datetime.png)
+
+>Date-time Range navigator supports date-time scale and displays date-time values as a labels in the specified format.
 
 ### Interval Customization
 
-Date-time intervals can be customized using the interval and intervalType properties of the range navigator.
-For example, when you set interval as 2 and intervalType as years, the interval is considered as 2 years.
-Date-time supports the following interval types:
+The DateTime intervals can be customized using the `interval` and the `intervalType` properties of the Range Selector. For example, if the `interval` is set to 2 and the `intervalType` is set to years, the interval will be considered to be 2 years.
+
+DateTime supports the following interval types:
 * Auto
 * Years
 * Quarter
@@ -160,15 +172,17 @@ Date-time supports the following interval types:
 
 {% endaspTab %}
 
-**Label Format**
+![DateTime interval type](images/data/datetime-interval.png)
 
-You can format and parse the date to all globalize format using `labelFormat` property in an axis.
+### Label Format
+
+The `labelFormat` property is used to format and parse the date to all globalize format.
 
 {% aspTab template="range-navigator/data/date-time-format", sourceFiles="date-time-format.cs" %}
 
 {% endaspTab %}
 
-The following table describes the result of applying some common date time formats to the `labelFormat` property
+The following table shows the results of applying some common DateTime formats to the `labelFormat` property.
 
 <!-- markdownlint-disable MD033 -->
 <table>

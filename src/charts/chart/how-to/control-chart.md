@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD036 -->
+
 # Create a control chart
 
 You can create a control chart (with UCL, CL, and LCL limits) using the stripline and annotation features.

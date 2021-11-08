@@ -18,7 +18,7 @@ The rendered stock chart can be printed directly using print button in period se
 
 ## Disable Export and print
 
-To empty the value of `exportType` for to disable the Export button.
+To empty the value of `ExportType` for to disable the Export button.
 
 {% aspTab template="stock-chart/getting-started/disable", sourceFiles="disable.cs" %}
 

@@ -87,7 +87,7 @@ After installation complete, this will be included in the project. You can refer
 
 ## BulletChart With Data
 
-This section explains how to plot local data to the bullet chart.
+This section explains how to plot local data to the Bullet Chart.
 
 ```cs
 public ActionResult Index()
@@ -108,7 +108,7 @@ public class BulletChartData {
 }
 ```
 
-Now assign the `ViewBag.dataSource` to `DataSource` property. `value` and `target` values should be mapped with `ValueName` and `TargetName` respectively.
+Now assign the `ViewBag.dataSource` to `DataSource` property. **value** and **target** values should be mapped with `ValueField` and `TargetField` respectively.
 
 {% aspTab template="bullet-chart/getting-started/default", sourceFiles="default.cs" %}
 
@@ -116,8 +116,8 @@ Now assign the `ViewBag.dataSource` to `DataSource` property. `value` and `targe
 
 ## Add Bullet Chart Title
 
-You can add a title using `Title` property to the bullet chart to provide quick
-information to the user about the data plotted in the bullet chart.
+You can add a title using `Title` property to the Bullet Chart to provide quick
+information to the user about the data plotted in the Bullet Chart.
 
 {% aspTab template="bullet-chart/getting-started/title", sourceFiles="title.cs" %}
 
@@ -125,7 +125,7 @@ information to the user about the data plotted in the bullet chart.
 
 ## Ranges
 
-You can add a range using `Ranges` property to the bullet chart.
+You can add a range using `Ranges` property to the Bullet Chart.
 
 {% aspTab template="bullet-chart/getting-started/ranges", sourceFiles="ranges.cs" %}
 
@@ -133,7 +133,7 @@ You can add a range using `Ranges` property to the bullet chart.
 
 ## Tooltip
 
-You can use tooltip for the bullet chart by setting the `Enable` property to true in `Tooltip`.
+You can use tooltip for the Bullet Chart by setting the `Enable` property to true in `Tooltip`.
 
 {% aspTab template="bullet-chart/getting-started/tooltip", sourceFiles="tooltip.cs" %}
 

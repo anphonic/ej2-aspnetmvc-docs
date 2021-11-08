@@ -8,8 +8,10 @@ description: "The range navigator provides RTL (right-to-left) support. Axis lab
 
 # RTL
 
-The range navigator provides RTL (right-to-left) support. This can be enabled using the “enableRtl” property.
+The Range Selector supports right-to-left (RTL), which can be enabled with the `enableRtl` property.
 
 {% aspTab template="range-navigator/rtl", sourceFiles="rtl.cs" %}
 
 {% endaspTab %}
+
+![RTL](images/rtl.png)

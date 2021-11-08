@@ -13,21 +13,30 @@ description: "Bullet Chart axis includes different customizations such as majort
 You can customize the `width`, `color`, and `size` of minor and major tick lines using the
 [`majorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartMajorTickLines.html) and [`minorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartMinorTickLines.html) properties of the bullet-chart.
 
+The following properties can be used to customize `majorTicklines` and `minorTicklines`.
+
+* **width** - Specifies the width of ticklines.
+* **height** - Specifies the height of ticklines.
+* **color** - Specifies the color of ticklines.
+* **useRangeColor** - Specifies the color of ticklines and represents the color from corresponding range colors.
+
+![Customizing Major and Minor TickLines in Bullet Chart](images/blazor-bullet-chart-tick-line-customization.png)
+
 ## Tick Placement
 
-You can place major and minor ticks `inside` or `outside` the ranges using the [`tickPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.TickPosition.html) property of bullet-chart.
+The major and the minor ticks can be placed **inside** or **outside** the ranges using the `tickPosition` property.
 
 ## Label Format
 
-***Axis Label Format***
-
-Axis numeric labels can be formatted by using the `labelFormat` property. Axis labels support all globalize formats. The following table describes the result of applying some commonly used label formats on numeric axis values.
+Axis numeric labels can be formatted by using the `labelFormat` property. Axis labels support all globalize formats.
 
 {% aspTab template="bullet-chart/axis-customization/label-format", sourceFiles="label-format.cs" %}
 
 {% endaspTab %}
 
-The following 'Table' describes the result of applying some commonly used 'Label' formats on Numeric axis values.
+![Changing Label Format in Bullet Chart](images/blazor-bullet-chart-label-format.png)
+
+The following table describes the result of applying some commonly used formats to numeric axis labels.
 
 <!-- markdownlint-disable MD033 -->
 <table>
@@ -90,14 +99,17 @@ The following 'Table' describes the result of applying some commonly used 'Label
 ## GroupingSeparator
 
 To separate groups of thousands, use the [`enableGroupSeparator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartBuilder.html) property of bullet-chart.
+To separate the groups of thousands, set the `enableGroupSeparator` property to **true**.
 
 ## Custom Label Format
 
-You can also customize the axis label format using a placeholder like ${value}K, in which the value represents the axis label, e.g. $20K.
+Using the `labelFormat` property, axis labels can be specified with a custom defined format in addition to the axis value. The label format uses a placeholder such as **${value}K**, which represents the axis label.
 
 {% aspTab template="bullet-chart/axis-customization/custom-label", sourceFiles="custom-label.cs" %}
 
 {% endaspTab %}
+
+![Bullet Chart with Custom Label Format](images/blazor-bullet-chart-custom-label-format.png)
 
 ## Label Placement
 
@@ -105,21 +117,24 @@ You can customize the axis labels `inside` or `outside` the bullet-chart using t
 
 ## Opposed Position
 
-To place an axis opposite to its original position,
-set the [`opposedPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartBuilder.html) property to true.
+To place an axis opposite to its original position, set the `opposedPosition` property to **true**.
 
 ## Category Label
 
-You can display the x axis label by mapping the `categoryField` from dataSource of a bullet-chart. It is a more efficient way to understand data.
+The Bullet Chart supports X-axis label by specifying the property from the data source to the `categoryField`. It helps to understand the input data in a more efficient way.
 
 {% aspTab template="bullet-chart/axis-customization/category", sourceFiles="category.cs" %}
 
 {% endaspTab %}
 
+![Bullet Chart with Category Label](images/blazor-bullet-chart-category-label.png)
+
 ## Category Label Customization
 
-You can customize the category label by using the `categoryLabelStyle` property of the bullet-chart.
+The label color, opacity, font size, font family, font weight, and font style can be customized by using the `categoryLabelStyle` setting for category and the `labelStyle` setting for axis label. The `useRangeColor` property specifies the color of the axis label and represents the color from the corresponding range colors.
 
 {% aspTab template="bullet-chart/axis-customization/category-label", sourceFiles="category-label.cs" %}
 
 {% endaspTab %}
+
+![Customizing Axis and Category Label in Bullet Chart](images/blazor-bullet-chart-label-customization.png)

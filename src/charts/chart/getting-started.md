@@ -86,3 +86,5 @@ After installation complete, this will be included in the project. You can refer
 ```
 
 ![Alt text](./images/chart.png)
+
+> You can refer to our [ASP.NET MVC Charts](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Charts example](https://ej2.syncfusion.com/aspnetmvc/Chart/Line#/material) that shows various chart types and how to represent time-dependent data, showing trends in data at equal intervals.

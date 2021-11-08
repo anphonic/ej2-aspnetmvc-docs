@@ -20,8 +20,8 @@ Here, the legend for a point can be collapsed by giving the empty string to the 
 
 ## Position and Alignment
 
-By using the position property, you can position the legend at the `left`, `right`, `top` or `bottom` of the chart.
-You can also align the legend to `center`, `far` or `near` of the chart using the alignment property.
+By using the position property, you can position the legend at the `Left`, `Right`, `Top` or `Bottom` of the chart.
+You can also align the legend to `Center`, `Far` or `Near` of the chart using the alignment property.
 
 {% aspTab template="chart/accumulation-charts/legend/position", sourceFiles="position.cs" %}
 
@@ -29,8 +29,8 @@ You can also align the legend to `center`, `far` or `near` of the chart usi
 
 ## Legend Shape
 
-To change the legend icon shape, use the `legendShape` property in the `series`. By default, legend icon shape
-is `seriesType`.
+To change the legend icon shape, use the `LegendShape` property in the `Series`. By default, legend icon shape
+is `SeriesType`.
 
 {% aspTab template="chart/accumulation-charts/legend/legend-shape", sourceFiles="legend-shape.cs" %}
 
@@ -38,7 +38,7 @@ is `seriesType`.
 
 ## Legend Size
 
-The legend size can be changed by using the `width` and `height` properties of the `legendSettings`.
+The legend size can be changed by using the `Width` and `Height` properties of the `LegendSettings`.
 
 {% aspTab template="chart/accumulation-charts/legend/size", sourceFiles="size.cs" %}
 
@@ -46,7 +46,7 @@ The legend size can be changed by using the `width` and `height` properties of t
 
 ## Legend Item Size
 
-You can customize the size of the legend items by using the `shapeHeight` and `shapeWidth` properties.
+You can customize the size of the legend items by using the `ShapeHeight` and `ShapeWidth` properties.
 
 {% aspTab template="chart/accumulation-charts/legend/item-size", sourceFiles="item-size.cs" %}
 
@@ -63,7 +63,7 @@ item by navigating between the pages using the navigation buttons.
 
 ## Enable Animation
 
-You can customize the animation while clicking legend by setting enableAnimation as true or false using `enableAnimation` property in Accumulation Chart.
+You can customize the animation while clicking legend by setting enableAnimation as true or false using `EnableAnimation` property in Accumulation Chart.
 
 {% aspTab template="chart/accumulation-charts/legend/accumulation-animation",  sourceFiles="accumulation-animation.cs" %}
 

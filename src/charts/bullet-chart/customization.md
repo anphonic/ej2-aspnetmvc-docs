@@ -6,25 +6,31 @@ component: "Bullet Chart"
 description: "Bullet Chart have different customizable features like different orientation, flow directions and animation features"
 ---
 
-# Orientation
+# Customization
 
-Bullet Chart can be rendered in different mode as `Horizontal` or `vertical` by using `orientation` property of the bullet-chart. By default bullet-chart rendered in horizontal mode.
+## Orientation
+
+The Bullet Chart can be rendered in different orientations such as **Horizontal** or **Vertical** via the `orientation` property. By default, the Bullet Chart is rendered in the **Horizontal** orientation.
 
 {% aspTab template="bullet-chart/customization/orientation", sourceFiles="orientation.cs" %}
 
 {% endaspTab %}
 
-## Flow Direction
+![Bullet Chart with Orientation](images/blazor-bullet-chart-orientation.png)
 
-Using `enableRtl` boolean property of the bullet-chart, you can render bullet-chart in right to left or left to right direction.
+## Right-to-left (RTL)
+
+The Bullet Chart supports the right-to-left rendering that can be enabled by setting the `enableRtl` property to **true**.
 
 {% aspTab template="bullet-chart/customization/right-to-left", sourceFiles="right-to-left.cs" %}
 
 {% endaspTab %}
 
+![Right to Left Flow Direction in Bullet Chart](images/blazor-bullet-chart-right-to-left-direction.png)
+
 ## Animation
 
-By setting `animation` property value as `true`, you can enable the linear animation of the feature and target bars.
+The actual and the target bar supports the linear animation via the `animation` setting. The speed and the delay are controlled using the `duration` and `delay` properties respectively.
 
 {% aspTab template="bullet-chart/customization/animation", sourceFiles="animation.cs" %}
 
@@ -32,8 +38,10 @@ By setting `animation` property value as `true`, you can enable the linear anima
 
 ## Theme
 
-Bullet chart also support different types of themes. Using `theme` property of the bullet-chart, you can customize the theme styles.
+The Bullet Chart supports different type of themes via the `theme` property.
 
 {% aspTab template="bullet-chart/customization/theme", sourceFiles="theme.cs" %}
 
 {% endaspTab %}
+
+![Applying Theme to Bullet Chart](images/blazor-bullet-chart-theme.png)

@@ -10,42 +10,46 @@ description: "The range navigator supports tooltips for sliders.Tooltips  displa
 
 <!-- markdownlint-disable MD036 -->
 
-The range navigator supports tooltips for sliders. Sliders are used to select data at a range in the range navigator.
-Tooltips  display the selected start and end values.
+The tooltip for sliders are supported by the Range Selector. Sliders are used in the Range Selector to select data from a specific range. The tooltip displays the selected start and end values.
 
 <!-- markdownlint-disable MD013 -->
 
 ## Enable Tooltip
 
-The tooltip is useful to show the selected data. You can enable tooltip by setting the enable property as true in tooltip object.
+The tooltip can be used to display information about the selected data and it is enabled by setting the `enable` property to **true**.
 
 {% aspTab template="range-navigator/getting-started/tooltip", sourceFiles="tooltip.cs" %}
 
 {% endaspTab %}
 
+![Enable tooltip](images/tooltip/tooltip.png)
+
 ## Customization
 
-Tooltips can be customized using the following properties:
+Tooltip can be customized using the following properties:
 
-* tooltip: Customizes the text displayed in tooltip.
-* enable: Customizes the visibility of the tooltip.
-* fill: Customizes the background color of the tooltip.
-* opacity: Customizes the opacity of the tooltip.
-* textStyle: Customizes the font size, color, family, style, weight, alignment, and overflow of the tooltip.
+* enable - Customizes the visibility of the tooltip.
+* fill - Customizes the background color of the tooltip.
+* opacity - Customizes the opacity of the tooltip.
+* textStyle - Customizes the font size, color, family, style, weight, alignment, and overflow of the tooltip.
 
 {% aspTab template="range-navigator/tooltip/tooltip", sourceFiles="tooltip.cs" %}
 
 {% endaspTab %}
 
+![Tooltip Customization](images/tooltip/tooltip-custom.png)
+
 ## Label Format
 
-You can format and parse the date to all globalize format using `labelFormat` property in an axis.
+The `labelFormat` property in the tooltip is used to format and parse the date to all globalize formats.
 
 {% aspTab template="range-navigator/tooltip/format", sourceFiles="format.cs" %}
 
 {% endaspTab %}
 
-The following table describes the result of applying some common date time formats to the `labelFormat` property
+![Label Format](images/tooltip/tooltip-format.png)
+
+The following table shows the results of applying some common date and time formats to the `labelFormat` property.
 
 <!-- markdownlint-disable MD033 -->
 <table>

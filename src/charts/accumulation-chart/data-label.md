@@ -8,7 +8,7 @@ description: "Data labels are names of the data points that are displayed on the
 
 # Data Label
 
-Data label can be added to a chart series by enabling the [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Visible)
+Data label can be added to a chart series by enabling the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Visible)
 option in the dataLabel property.
 
 {% aspTab template="chart/accumulation-charts/datalabel/default", sourceFiles="default.cs" %}
@@ -17,7 +17,7 @@ option in the dataLabel property.
 
 ## Positioning
 
-Accumulation chart provides support for placing the data label either `inside` or `outside` the chart.
+Accumulation chart provides support for placing the data label either `Inside` or `Outside` the chart.
 
 {% aspTab template="chart/accumulation-charts/datalabel/position", sourceFiles="position.cs" %}
 
@@ -26,7 +26,7 @@ Accumulation chart provides support for placing the data label either `inside` o
 ## Smart Labels
 
 Datalabels will be arranged smartly without overlapping with each other. You can enable or disable this feature using
-the [`enableSmartLabels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_EnableSmartLabels)
+the [`EnableSmartLabels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_EnableSmartLabels)
 property.
 
 {% aspTab template="chart/accumulation-charts/datalabel/smartlabels", sourceFiles="smartlabels.cs" %}
@@ -37,7 +37,7 @@ property.
 
 Label content can be formatted by using the template option. Inside the template, you can add the placeholder text
 `${point.x}` and `${point.y}` to display corresponding data points x & y value. Using
-[`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Template)
+[`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Template)
 property, you can set data label template in chart.
 
 {% aspTab template="chart/accumulation-charts/datalabel/template", sourceFiles="template.cs" %}
@@ -46,8 +46,8 @@ property, you can set data label template in chart.
 
 ## Connector Line
 
-Connector line will be visible when the data label is placed `outside` the chart.
-The connector line can be customized using the `type`, `color`, `width`, `length` and `dashArray` properties
+Connector line will be visible when the data label is placed `Outside` the chart.
+The connector line can be customized using the `Type`, `Color`, `Width`, `Length` and `DashArray` properties
 
 {% aspTab template="chart/accumulation-charts/datalabel/connector", sourceFiles="connector.cs" %}
 
@@ -55,7 +55,7 @@ The connector line can be customized using the `type`, `color`, `width`, `length
 
 ## Text Mapping
 
-Text from the data source can be mapped to data label using `name` property.
+Text from the data source can be mapped to data label using `Name` property.
 
 {% aspTab template="chart/accumulation-charts/datalabel/map", sourceFiles="map.cs" %}
 
@@ -63,7 +63,7 @@ Text from the data source can be mapped to data label using `name` property.
 
 ## Customization
 
-Individual text can be customized using the `textRender` event.
+Individual text can be customized using the `TextRender` event.
 
 {% aspTab template="chart/accumulation-charts/datalabel/custom", sourceFiles="custom.cs" %}
 

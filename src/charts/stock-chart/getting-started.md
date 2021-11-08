@@ -77,3 +77,5 @@ horizontal axis to Category. By default, the axis valueType is Numeric.
 {% aspTab template="stock-chart/getting-started/populateData", sourceFiles="populateData.cs" %}
 
 {% endaspTab %}
+
+> You can refer to our [ASP.NET MVC Stock Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/stock-chart) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Stock Chart example](https://ej2.syncfusion.com/aspnetmvc/StockChart/Default#/material) that shows you how to present and manipulate data.

@@ -10,16 +10,17 @@ description: "RangeNavigator supports Multilevel label and enable grouping prope
 
 ## Multilevel labels
 
-The second level labels for the range navigator can be enabled by setting the “enableGrouping” property to true.
-This is restricted to date-time axis alone.
+The multi-level labels for the Range Selector can be enabled by setting the `enableGrouping` property to **true**. This is restricted to the DateTime axis alone.
 
 {% aspTab template="range-navigator/label/multi", sourceFiles="multi.cs" %}
 
 {% endaspTab %}
 
+![Multilevel labels](images/labels/multi.png)
+
 ## Grouping
 
-The second level axis labels can be grouped using “groupBy” property with the following interval types:
+The multi-level labels can be grouped using the `groupBy` property with the following interval types:
 
 * Auto
 * Years
@@ -35,29 +36,34 @@ The second level axis labels can be grouped using “groupBy” property with th
 
 {% endaspTab %}
 
+![Grouping](images/labels/group.png)
+
 ## Smart labels
 
-The “labelIntersectAction” property is used to avoid overlapping of labels.
-
-The following code sample shows setting the labelIntersectAction property to Hide.
+The `labelIntersectAction` property is used to avoid overlapping of labels. The following code sample shows the setting of `labelIntersectAction` property to **Hide**.
 
 {% aspTab template="range-navigator/label/smart", sourceFiles="smart.cs" %}
 
 {% endaspTab %}
 
+![Smart labels](images/labels/smart.png)
+
 ## Label positioning
 
-By default, the labels can be placed at outside of the range navigator. You can place the labels inside the range navigator
-using the labelPosition property.
+By default, the labels can be placed outside the Range Selector. It can also be placed inside the Range Selector using the `labelPosition` property.
 
 {% aspTab template="range-navigator/label/position", sourceFiles="position.cs" %}
 
 {% endaspTab %}
 
+![Label positioning](images/labels/position.png)
+
 ## Labels customization
 
-The font size, color, family, etc. can be customized using the “labelStyle” property.
+The font size, color, family, etc. can be customized using the `labelStyle` setting.
 
 {% aspTab template="range-navigator/label/custom", sourceFiles="custom.cs" %}
 
 {% endaspTab %}
+
+![Labels Customization](images/labels/custom.png)

@@ -10,7 +10,11 @@ description: "The rendered rangenavigator can be printed or exported directly fr
 
 ## Export
 
-The rendered range navigator can be exported to JPEG, PNG, SVG, or PDF format using the export method in the range navigator. The input parameters for this method are Export Type for format and fileName for result.
+The rendered Range Selector can be exported to **JPEG**, **PNG**, **SVG**, or **PDF** format by using the `export` method in the Range Selector. This method contains the following parameters:
+
+* **Type** - To specify the export type. The component can be exported to **JPEG**, **PNG**, **SVG**, or **PDF** format.
+* **File name** - To specify the file name to export.
+* **Orientation** - To specify the orientation type. This is applicable only for PDF export type.
 
 {% aspTab template="range-navigator/print/export", sourceFiles="export.cs" %}
 
@@ -18,7 +22,7 @@ The rendered range navigator can be exported to JPEG, PNG, SVG, or PDF format us
 
 ## Print
 
-The rendered range navigator can be printed directly from the browser by calling the public method print. The ID of the range navigator div element must be passed as argument to that method.
+The rendered Range Selector can be printed directly from the browser by calling the public method `print`.
 
 {% aspTab template="range-navigator/print/print", sourceFiles="print.cs" %}
 

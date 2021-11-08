@@ -12,7 +12,7 @@ The period selector allows to select a range with specified periods.
 
 ## Periods
 
-Periods is an array of objects that allows users to specify the range of periods. The “interval” property specifies the count value of the button, and the “text” property specifies the text to be displayed on button. The “intervalType” property allows users to customize the intervals of the buttons. The “intervalType” property supports the following interval types:
+An array of objects that allows the users to specify pre-defined time intervals. The `interval` property specifies the count value of the button, and the `text` property specifies the text to be displayed on the button. The `intervaltype` property allows the users to customize the interval type, and it supports the following types:
 
 * Auto
 * Years
@@ -28,25 +28,31 @@ Periods is an array of objects that allows users to specify the range of periods
 
 {% endaspTab %}
 
+![Periods](images/period-selector/periods.png)
+
 ## Positioning period selector
 
-The “position” property allows users to position the period selector either at the “top” or “bottom”.
+The `position` property allows the users to position the period selector at the **Top** or **Bottom**.
 
 {% aspTab template="range-navigator/period/position", sourceFiles="position.cs" %}
 
 {% endaspTab %}
 
+![Positioning](images/period-selector/position.png)
+
 ## Height
 
-The “height” property allows users to specify the height for period selector. The default value of the height property is 43.
+The `height` property allows the users to specify the height of the period selector. The default value of the height property is **43px**.
 
 {% aspTab template="range-navigator/period/height", sourceFiles="height.cs" %}
 
 {% endaspTab %}
 
+![Height](images/period-selector/height.png)
+
 ## Visibility of range navigator
 
-The “disableRangeSelector” property allows users to render the period selector without range navigator.
+The `disableRangeSelector` property allows the users to display only the period selector and not the Range Selector.
 
 {% aspTab template="range-navigator/period/visible", sourceFiles="visible.cs" %}
 

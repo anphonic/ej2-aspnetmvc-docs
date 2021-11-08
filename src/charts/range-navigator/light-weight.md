@@ -8,12 +8,13 @@ description: "Lightweight rangenavigator is getting intialized when the datasour
 
 # Lightweight range navigator
 
-By default, when the dataSource for series property in RangeNavigator is empty, a light weight Range navigator will get
-initialized without chart. The following code example shows the basic lightweight range navigator.
+By default, when the `dataSource` for `series` is empty, a lightweight Range Selector will be shown without Chart.
 
 {% aspTab template="range-navigator/light-weight", sourceFiles="light-weight.cs" %}
 
 {% endaspTab %}
+
+![Lightweight Range Selector](images/light-weight.png)
 
 ## See Also
 

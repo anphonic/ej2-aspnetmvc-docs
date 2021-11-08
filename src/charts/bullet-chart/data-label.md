@@ -8,16 +8,18 @@ description: "Bullet Chart can be rendered by using different types of data sour
 
 # Data Label
 
-Data label can be added to a bullet-chart feature bars by enabling the `enable` option in the dataLabel. By default,the labels will arrange smartly without overlapping.
+Data Labels are used to identify the value of actual bar in the Bullet Chart component. The Data Labels will be shown by specifying the `dataLabel` setting's `enable` property to **true**.
 
 {% aspTab template="bullet-chart/data-label/data-label", sourceFiles="data-label.cs" %}
 
 {% endaspTab %}
 
-## Customization
+## Data Label Customization
 
-By using `labelStyle` property in data label, you can customize the `color`, `size` and `font`.
+Data Labels color, opacity, font size, font family, font weight, and font style can be customized using the `labelStyle`.
 
 {% aspTab template="bullet-chart/data-label/data-label-custom", sourceFiles="data-label-custom.cs" %}
 
 {% endaspTab %}
+
+![Bullet Chart with Data Labels](images/blazor-bullet-chart-data-label.png)
