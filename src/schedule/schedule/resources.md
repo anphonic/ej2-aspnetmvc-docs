@@ -135,18 +135,6 @@ It groups the number of resources under each date and is applicable only on the 
 
 > This kind of grouping by date is not applicable on any of the **timeline views**.
 
-### Grouping with empty resource datasource
-
-When using grouping, it is mandatory to provide at least one resource data in dataSource collection this is the default behavior of our scheduler. If the resource does not have a dataSource, scheduler rendered like below image.
-
-![Grouping with empty resource](../../schedule/images/empty-datasource.png)
-
-To handle this case you can make the default schedule by emptying the group property.
-
-{% aspTab template="schedule/resources/empty-resources", sourceFiles="data.cs"  %}
-
-{% endaspTab %}
-
 ## Customizing parent resource cells
 
 In timeline view work cells of parent resource can be customized by checking the `elementType` as `resourceGroupCells` in the event `RenderCell`. In the following code example, background color of the work hours has been changed.

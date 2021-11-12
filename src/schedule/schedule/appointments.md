@@ -240,6 +240,14 @@ Apart from the default Scheduler fields, the user can include 'n' number of cust
 
 {% endaspTab %}
 
+## Customize the order of the overlapping events
+
+By default, the scheduler will render the overlapping events based on the start and end time. Now we can customize the order of the overlapping events based on the custom fields by using the `SortComparer` property grouped under the `EventSettings` property. The following code example shows how to sort the appointments based on the custom field as follows.
+
+{% aspTab template="schedule/appointments/sort-event", sourceFiles="data.cs"  %}
+
+{% endaspTab %}
+
 ## Drag and drop appointments
 
 Appointments can be rescheduled to any time by dragging and dropping them onto the desired location. To work with drag and drop functionality make sure that `AllowDragAndDrop` is set to **true** on Scheduler. In mobile mode, you can drag and drop the events by tap holding an event and dropping them on to the desired location.
