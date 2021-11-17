@@ -69,3 +69,7 @@ You can search the Grid data on each key stroke by binding the `keyup` event for
 {% aspTab template="grid/search/search-each-key", sourceFiles="search-each-key.cs" %}
 
 {% endaspTab %}
+
+## See Also
+
+* [Add clear icon in search in ASP.NET MVC  Grid](https://www.syncfusion.com/forums/139361/add-clear-icon-in-search-in-asp-net-mvc-grid)

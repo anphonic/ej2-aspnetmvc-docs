@@ -84,3 +84,5 @@ If printing of all the data is still needed, we suggest to Export the grid to **
 ## See Also
 
 * [How to Print the expanded state grid from all pages](./how-to/print-the-expanded-state-from-other-pages)
+* [How to print the Grid using external button in ASP.NET MVC Grid](https://www.syncfusion.com/forums/136763/how-to-print-the-grid-using-external-button-in-asp-net-mvc-grid)
+* [How to print the custom report in ASP.NET MVC Grid](https://www.syncfusion.com/forums/141249/how-to-print-the-custom-report-in-asp-net-mvc-grid)

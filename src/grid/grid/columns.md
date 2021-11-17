@@ -446,3 +446,7 @@ To render boolean values as checkbox in columns, you need to set [`DisplayAsChec
 * [How to Perform aggregation in Foreign Key Column](./how-to/perform-aggregation-in-foreign-key-column)
 * [How to set complex column as Foreignkey column](./how-to/complex-column-as-foreign-key-column)
 * [Complex Data Binding with list of Array Of Objects](./how-to/list-of-array-of-objects)
+* [How to add primaryKey after column rendered in ASP.NET MVC  Grid](https://www.syncfusion.com/forums/138439/how-to-add-primarykey-after-column-rendered-in-asp-net-mvc-grid)
+* [Drag and drop between two Grids in ASP.NET MVC Grid](https://www.syncfusion.com/forums/138154/drag-and-drop-between-two-grids-in-asp-net-mvc-grid)
+* [How can I put a Sparkline in a child grid that is on a Grid with hierarchy in ASP.NET MVC Grid](https://www.syncfusion.com/forums/145389/how-can-i-put-a-sparkline-in-a-child-grid-that-is-on-a-grid-with-hierarchy-in-asp-net-mvc)
+* [How can I enable or disable a menu option that is inside a template in ASP.NET MVC Grid](https://www.syncfusion.com/forums/153923/how-can-i-enable-or-disable-a-menu-option-that-is-inside-a-template-in-asp-net-mvc-grid)
