@@ -63,3 +63,13 @@ The following example demonstrates how to prevent Grid columns from persisting. 
 {% aspTab template="grid/state-persist/column-prevent", sourceFiles="column-prevent.cs" %}
 
 {% endaspTab %}
+
+## Persist the Grid column template, header template, and headerText
+
+By default, the Grid properties such as column template, header text, header template, column formatter, and value accessor will not persist when [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) is set to true. Because the column template and header text can be customized at the application level.
+
+If you wish to restore all these column properties, then you can achieve it by cloning the grid’s columns property using JavaScript Object’s assign method and storing this along with the persist data manually. While restoring the settings, this column object must be assigned to the grid’s columns property to restore the column settings as demonstrated in the following sample.
+
+{% aspTab template="grid/state-persist/column-persist", sourceFiles="column-persist.cs" %}
+
+{% endaspTab %}
