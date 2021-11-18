@@ -12,9 +12,9 @@ description: "Learn how to get started using ASP.NET MVC PDF Viewer component th
 
 To get started with ASP.NET MVC application, ensure that the following software is installed on the machine.
 
+* Visual Studio
 * .Net Framework 4.5 and above.
 * ASP.NET MVC 4 or ASP.NET MVC 5
-* Visual Studio
 
 ## Preparing ASP.NET MVC application
 
@@ -39,44 +39,35 @@ Install the **Syncfusion.EJ2.MVC5** package to the application.
 
 Install the **Syncfusion.EJ2.PdfViewer.AspNet.Mvc5** package to the application.
 
-**Step 3:** Add `Syncfusion.EJ2` namespace reference in `Web.config`
+**Step 3 :** Added the following assemblies in `Views\Shared\_Layout.cshtml` and `Index.cshtml` view page.
 
-```cs
-<namespaces>
-    <add namespace="Syncfusion.EJ2"/>
-    <add namespace="Syncfusion.EJ2.PdfViewer"/>
-</namespaces>
+ ```html
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.PdfViewer
 
 ```
 
-```cs
-<system.web>
-    <compilation>
-      <assemblies>
-        <add assembly="Syncfusion.EJ2, Culture=neutral"/>
-        <add assembly="Syncfusion.EJ2.PdfViewer, Culture=neutral"/>
-      </assemblies>
-    </compilation>
-  </system.web>
-```
+**Step 4:** Add client side resource through [`CDN`](http://ej2.syncfusion.com/15.4.23/documentation/base/deployment.html?lang=typescript#cdn) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the layout page `Views\Shared\_Layout.cshtml`.
 
-**Step 4:** Add client side resource through [`CDN`](http://ej2.syncfusion.com/15.4.23/documentation/base/deployment.html?lang=typescript#cdn) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the layout page `_Layout.cshtml`.
+```html
 
-{% aspCodeBlock %}
-
-```cs
-
+<head>
 @* Syncfusion Essential JS2 Scripts *@
 <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+</head>
 
 ```
-
-{% endaspCodeBlock %}
 
 **Step 5:** Adding Script Manager in the layout page `_Layout.cshtml`.
 
-```cs
-@Html.EJS().ScriptManager()
+```html
+
+<body>
+    @RenderBody()
+    @RenderSection("scripts", required: false)
+    @Html.EJS().ScriptManager()
+</body>
+
 ```
 
 **Step 6:** Add the following code to the Index.cshtml view page, which is presented under Views/Home folder, to initialize the PDF Viewer.
@@ -84,3 +75,5 @@ Install the **Syncfusion.EJ2.PdfViewer.AspNet.Mvc5** package to the application.
 {% aspTab template="pdfviewer/getting-start-mvc", sourceFiles="PdfViewerController.cs" %}
 
 {% endaspTab %}
+
+> You can refer to our [ASP.NET MVC PDF Viewer](https://www.syncfusion.com/aspnet-mvc-ui-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC PDF Viewer example](https://ej2.syncfusion.com/aspnetmvc/PdfViewer/Default#/material) to understand how to explains core features of PDF Viewer.
