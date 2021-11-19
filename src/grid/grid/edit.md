@@ -123,6 +123,26 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 
 {% endaspTab %}
 
+#### Perform CRUD action programmatically
+
+Grid methods can be used to perform CRUD operations programmatically. The `addRecord`, `deleteRecord`, and `startEdit` methods are used to perform CRUD operations in the following demo.
+
+* To add a new record to the Grid, use the `addRecord` method. In this method, you can pass the data parameter to add a new record to the Grid, and the index parameter to add a record at a specific index. If you call this method with no parameters, it will create an empty row in the Grid.
+
+* To change the selected row to the edit state, use the `startEdit` method.
+
+* If you need to update the row data in the Grid’s datasource, you can use the `updateRow` method. In this method, you need to pass the index value of the row to be updated along with the updated data.
+
+* If you need to update the particular cell in the row, you can use the `setCellValue` method. In this method, you need to pass the primary key value of the data source, field name, and new value for the particular cell.
+
+* To remove a selected row from the Grid, use the `deleteRecord` method. For both edit and delete operations, you must select a row first.
+
+> **Note:** In both normal and dialog editing modes, these methods can be used.
+
+{% aspTab template="grid/edit/programmatic", sourceFiles="programmatic.cs" %}
+
+{% endaspTab %}
+
 ### Dialog
 
 In dialog edit mode, when you start editing the currently selected row data will be shown on a dialog.
