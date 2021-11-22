@@ -15,6 +15,7 @@
 * [Third party integration](rich-text-editor/third-party-integration.md)
 * [Inline Mode](rich-text-editor/inline-mode.md)
 * [Paste from MS Word](rich-text-editor/paste-cleanup.md)
+* [Enter and Shift-Enter Key's Customization](rich-text-editor/enter-key.md)
 * [Iframe Rendering](rich-text-editor/iframe.md)
 * [ExecCommand in Rich Text Editor](rich-text-editor/exec-command.md)
 * [Style and appearance](rich-text-editor/style.md)
