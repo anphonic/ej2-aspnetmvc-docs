@@ -35,3 +35,4 @@ DateTimePicker.
 ## See Also
 
 * [Render DateTimePicker with specific culture](./globalization)
+* [How to get and set value in DateTimePickerFor](./how-to/datetimepicker-for-mvc)

@@ -36,3 +36,4 @@ DateRangePicker.
 
 * [Render DateRangePicker with range restriction](./range-restriction)
 * [Render DateRangePicker with specific culture](./globalization)
+* [How to get and set value in DateRangePickerFor](./how-to/daterangepicker-for-mvc)

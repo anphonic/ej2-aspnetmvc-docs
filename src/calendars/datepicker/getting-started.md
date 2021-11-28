@@ -38,3 +38,4 @@ The below example demonstrates the DatePicker to select a date within a range fr
 * [Render DatePicker with specific culture](./globalization)
 * [How to change the initial view of the DatePicker](./view)
 * [How to achieve validation with DatePicker](./how-to/client-side-validation)
+* [How to get and set value in DatePickerFor](./how-to/datepicker-for-mvc)

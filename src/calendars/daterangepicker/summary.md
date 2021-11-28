@@ -7,3 +7,4 @@
 * [Set the Placeholder](daterangepicker/how-to/set-the-placeholder.md)
 * [Customization using CssClass](daterangepicker/how-to/customization-using-cssclass.md)
 * [Customize Day Header](daterangepicker/how-to/customize-the-daterangepicker-day-header.md)
+* [Render DateRangePickerFor](daterangepicker/how-to/daterangepicker-for-mvc.md)

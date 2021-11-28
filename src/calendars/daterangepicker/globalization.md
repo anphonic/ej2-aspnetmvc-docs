@@ -104,7 +104,7 @@ text in the right-to-left direction, use
 property.
 
 The code example demonstrates the DateRangePicker control in `Arabic` culture. It also explains how to set localized text to
-the placeholder using [L10n.load](https://ej2.syncfusion.com/documentation/base/api/l10n/) method.
+the placeholder using `L10n.load` method.
 
 The following example demonstrates DateRangePicker in `Arabic` culture with right-to-left direction.
 

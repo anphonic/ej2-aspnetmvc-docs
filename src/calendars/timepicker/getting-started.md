@@ -52,3 +52,4 @@ interval. The time interval is set to
 * [Render TimePicker with min and max time](./time-range)
 * [How to achieve validation with TimePicker](./how-to/client-side-validation-using-form-validator)
 * [Render TimePicker with specific culture](./globalization)
+* [How to get and set value in TimePickerFor](./how-to/timepicker-for-mvc)
